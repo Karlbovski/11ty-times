@@ -1,0 +1,98 @@
+/** 
+  For test purpose only. 
+  Delete all the following when starting a new project !
+*/
+@use "../abstracts/mediaqueries"as *;
+@use "../abstracts/_colors"as *;
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+  padding: 1em;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 1fr);
+  grid-template-rows: repeat(auto-fill, 1fr);
+  grid-template-areas:
+    ". post ."
+    "headline headline headline"
+    "cnav cnav cnav"
+    "main main main"
+    "board board board"
+    "aside aside aside";
+
+  padding: 1em;
+  animation: fade-in .66s ease backwards;
+
+  @include laptop {
+    grid-template-columns: 1fr 4fr 1fr;
+  }
+
+  @include desktop {
+
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-areas:
+      ". post ."
+      ". headline aside"
+      ". cnav aside"
+      ". main aside"
+      ". board aside";
+  }
+}
+
+a {
+  color: var(--color-300);
+}
+
+.headline {
+  margin-top: 2em;
+  grid-area: headline;
+}
+
+.content-navigation {
+  grid-area: cnav;
+}
+
+.content-board {
+  grid-area: main;
+}
+
+.content-aside {
+  grid-area: aside;
+
+  @include tablet {
+    padding: 0 6em;
+  }
+}
+
+.post {
+  grid-area: post;
+  margin-top: 2em;
+
+  @include tablet {
+    // padding: 0 3em;  
+  }
+
+  @include laptop {
+    // padding: 0 1em;  
+  }
+}
+
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

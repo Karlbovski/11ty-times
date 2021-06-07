@@ -1,0 +1,23 @@
+<footer>
+  <div>
+    {% if locale %}
+      <p>{{ footer[locale].addressTitle }}</p>
+      <p>{{ footer[locale].addressStreet }}, {{ footer[locale].addressNumber }}</p>
+      <p>{{ footer[locale].addressPostcode }}, {{ footer[locale].addressCity }}</p>
+    {% else %}
+      <p>{{ locales[0].header }}
+        {{ locales[0].label }}</p>
+      <p>{{ locales[0].metaDescription }}</p>
+    {% endif %}
+  </div>
+  <p>
+    <small>&copy;2021-present The Web</small>
+  </p>
+</footer>
+{# <script type="module" src="/js/main.js"></script> #}
+{% set js %}
+{% include "js/dom.js" %}
+{% include "js/core.js" %}
+{% include "js/darkmode.js" %}
+{% endset %}
+<script type="text/javascript">{{ js | jsmin | safe }}</script>

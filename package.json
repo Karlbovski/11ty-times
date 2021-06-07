@@ -1,0 +1,32 @@
+{
+  "name": "11ty-times",
+  "version": "0.0.1",
+  "description": "A blog with 11ty.",
+  "scripts": {
+    "watch:sass": "sass --watch src/assets/sass:public/css",
+    "build:sass": "sass src/assets/sass:public/css",
+    "watch:eleventy": "eleventy --serve",
+    "build:eleventy": "eleventy",
+    "dev": "npm-run-all build:sass --parallel watch:*",
+    "build": "npm-run-all build:*"
+  },
+  "keywords": [
+    "eleventy",
+    "ssg",
+    "starter"
+  ],
+  "author": "Stefano Giorgi",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Karlbovski/11ty-starter"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "dayjs": "^1.10.5",
+    "markdown-it": "^12.0.6",
+    "markdown-it-emoji": "^2.0.0",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.32.8"
+  }
+}
