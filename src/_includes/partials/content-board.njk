@@ -1,36 +1,30 @@
 <section class="content-board">
-  <h2>Content Board</h2>
+  <h2>Latest</h2>
+  <small>[partials/content-board.njk]</small>
   <div class="grid-masonry">
-    <div class="card featured">
-      <p>some card 1</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt eaque esse reiciendis dolorem quidem error eius
-        nesciunt eos blanditiis, aut ad hic officiis eum dolorum dolor magni fugit incidunt? Recusandae!</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt eaque esse reiciendis dolorem quidem error eius
-        nesciunt eos blanditiis, aut ad hic officiis eum dolorum dolor magni fugit incidunt? Recusandae!</p>
-    </div>
-    <div class="card">
-      <p>some card 2</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt eaque esse reiciendis dolorem quidem error eius
-        nesciunt eos blanditiis, aut ad hic officiis eum dolorum dolor magni fugit incidunt? Recusandae!</p>
-    </div>
-    <div class="card">
-      <p>some card 3</p>
-      <p>Sunt eaque esse reiciendis dolorem quidem error eius nesciunt eos blanditiis, aut ad hic officiis eum dolorum dolor
-        magni fugit incidunt? Recusandae!</p>
-    </div>
-    <div class="card">
-      <p>some card 4</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt eaque esse reiciendis dolorem quidem error eius
-        nesciunt eos blanditiis, aut ad hic officiis eum dolorum dolor magni fugit incidunt? Recusandae!</p>
-    </div>
-    <div class="card">
-      <p>some card 5</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt eaque esse reiciendis dolorem quidem error eius
-        nesciunt eos blanditiis, aut ad hic officiis eum dolorum dolor magni fugit incidunt? Recusandae!</p>
-    </div>
-    <div class="card">
-      <p>some card 6</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae!</p>
-    </div>
-  </div>
-</section>
+    {% for post in collections.post | reverse %}
+      {% if post.data.featured %}
+        <div class="card featured">
+          <h3>
+            <a href="{{ post.url | url }}">{{ post.data.metaTitle }}</a>
+          </h3>
+          <small>{{ post.data.date }}</small>
+          {% if post.data.metaDescription %}
+            <h4>{{ post.data.metaDescription }}</h4>
+          {% endif %}
+          {{ post.templateContent | excerpt }}
+        </div>
+      {% else %}
+        <div class="card">
+          <h3>
+            <a href="{{ post.url | url }}">{{ post.data.metaTitle }}</a>
+          </h3>
+          <small>{{ post.data.date }}</small>
+          {% if post.data.metaDescription %}
+            <h4>{{ post.data.metaDescription }}</h4>
+          {% endif %}
+          {{ post.templateContent | excerpt }}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </section>

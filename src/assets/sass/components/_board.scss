@@ -6,12 +6,9 @@
 }
 
 .grid-masonry {
+  // outline: 1px solid red;
+
   --columns: 1;
-  min-width: 100%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(var(--columns), 1fr);
-  gap: var(--base-gap);
 
   @include tablet {
     --columns: 2;
@@ -20,6 +17,12 @@
   @include desktop {
     --columns: 3;
   }
+
+  min-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  gap: var(--base-gap);
 }
 
 .grid-masonry>* {
@@ -28,18 +31,39 @@
 
 @supports (grid-template-rows: masonry) {
   .grid-masonry {
+    // outline: 1px solid purple;
     grid-template-rows: masonry;
     grid-auto-flow: dense;
   }
+
+  //this breaks all!!!!
+  // .featured {
+  //   grid-column: span 2;
+  // }
 }
 
 .card {
-  padding: .5em;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
   background-color: var(--color-500);
-}
 
-.featured {
-  @include tablet {
-    grid-column: span 2;
+  a {
+    margin-bottom: 1em;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--color-400);
+    }
+  }
+
+  h3 {
+    margin: .5rem 0 1.2rem;
+    font-family: var(--ff-serif);
+  }
+
+  h4 {
+    font-size: var(--fs-h5);
+    font-family: var(--ff-serif);
   }
 }

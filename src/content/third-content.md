@@ -1,11 +1,11 @@
 ---
-metaTitle: "I once was the title"
-metaDescription: Lorem ipsum dolor elit.
+metaTitle: "I trice was the title"
+metaDescription: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas?
 category: article
-date: "2019-03-23"
+date: "2021-03-23"
 creator: "admin"
 publish: true
-featured: true
+featured: false
 locale: "en"
 ---
 

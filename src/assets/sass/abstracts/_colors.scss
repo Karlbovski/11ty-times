@@ -1,12 +1,12 @@
 /* theme mixins */
 @mixin themelight {
-  --color-foreground: hsl(0, 0%, 13%);
+  --color-foreground: hsl(195, 7%, 12%);
   --color-background: hsl(72, 8%, 88%);
   --color-100: hsl(216, 90%, 92%);
   --color-200: hsl(216, 93%, 84%);
   --color-300: hsl(216, 23%, 28%);
   --color-400: hsl(215, 30%, 40%);
-  --color-500: hsl(60, 7%, 94%);
+  --color-500: hsl(72, 7%, 86%);
 }
 
 @mixin themedark {
