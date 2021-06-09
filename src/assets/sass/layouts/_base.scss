@@ -9,6 +9,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 3em;
   padding: 1em;
 
@@ -18,27 +19,33 @@ header {
 }
 
 main {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 1fr);
-  grid-template-rows: repeat(auto-fill, 1fr);
-  grid-template-areas:
-    ". post ."
-    "headline headline headline"
-    "cnav cnav cnav"
-    "main main main"
-    "board board board"
-    "aside aside aside";
-
+  margin: 0 auto;
   padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "post"
+    "headline"
+    "cnav"
+    "main"
+    "board"
+    "aside";
+
   animation: fade-in .66s ease backwards;
 
   @include laptop {
     grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+      ". post ."
+      "headline headline headline"
+      "cnav cnav cnav"
+      "main main main"
+      "board board board"
+      "aside aside aside";
   }
 
   @include desktop {
-
-    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-columns: 2fr 4fr 2fr;
     grid-template-areas:
       ". post ."
       ". headline aside"
@@ -77,12 +84,35 @@ a {
   grid-area: post;
   margin-top: 2em;
 
-  @include tablet {
-    // padding: 0 3em;  
-  }
+
 
   @include laptop {
     // padding: 0 1em;  
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 6em;
+  font-size: var(--fs-small);
+
+  @include tablet {
+    font-size: .9rem;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+}
+
+footer>* {
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
   }
 }
 

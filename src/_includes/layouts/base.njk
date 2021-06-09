@@ -25,6 +25,8 @@
                 {{ content | safe }}
             {% endblock %}
         </main>
-        {% include "partials/footer.njk" %}
+        {% block footer %}
+            {% include "partials/footer.njk" %}
+        {% endblock %}
     </body>
 </html></head></html></body></html>

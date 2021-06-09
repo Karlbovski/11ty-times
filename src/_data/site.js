@@ -1,10 +1,10 @@
 module.exports = {
     buildTime: new Date(),
-    name: "11ty-Starter",
-    metaTitle: "Global Meta Title",
-    metaDescription: "Global Meta Description",
-    metaKeywords: "global, meta, keywords",
-    url: "https://www.mysite.com",
+    name: "11ty-Times",
+    metaTitle: "11ty-Times a blog",
+    metaDescription: "Building a blog with 11ty",
+    metaKeywords: "ssg, eleventy, javascript, html, css",
+    url: "https://www.11ty-times.com",
     baseUrl: "/",
     twitter: "@handle",
 };

@@ -1,4 +1,5 @@
 const filters = require('./utils/filters.js')
+const transforms = require('./utils/transforms.js')
 
 // 11ty configuration
 const
@@ -43,6 +44,11 @@ module.exports = function (eleventyConfig) {
   // Filters
   Object.keys(filters).forEach((filterName) => {
     eleventyConfig.addFilter(filterName, filters[filterName])
+  })
+
+  // Transforms
+  Object.keys(transforms).forEach((transformName) => {
+    eleventyConfig.addTransform(transformName, transforms[transformName])
   })
 
   /** 
