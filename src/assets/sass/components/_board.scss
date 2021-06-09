@@ -9,8 +9,6 @@
   --columns: 1;
   min-width: 100%;
   margin: 0 auto;
-  // display: column;
-  // columns: var(--columns);
   display: grid;
   grid-template-columns: repeat(var(--columns), 1fr);
   gap: var(--base-gap);
@@ -37,7 +35,7 @@
 
 .card {
   padding: .5em;
-  background-color: teal;
+  background-color: var(--color-500);
 }
 
 .featured {

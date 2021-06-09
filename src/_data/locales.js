@@ -3,10 +3,10 @@ module.exports = [{
     locale: "en",
     default: true,
     header: "Content in",
-    metaTitle: "Just another 11ty-Starter",
-    metaDescription: "Description in english",
+    metaTitle: "11ty-Times. A blog with 11ty",
+    metaDescription: "Building a blog full of features with 11ty",
     navItems: [{
-        label: "Home",
+        label: "11ty-Times",
         url: "/"
       },
       {

@@ -1,13 +1,23 @@
-<header>
+<header class="no-print">
   {% for language in locales %}
     {% if locale and locale === language.locale %}
       {% for navItem in language.navItems %}
-        <a href="{{ navItem.url }}">{{ navItem.label }}</a>
+        {% if loop.first %}
+          <div>
+            <a class="logo" href="{{ navItem.url }}">{{ navItem.label }}</a>
+          </div>
+        {% else %}
+          <a href="{{ navItem.url }}">{{ navItem.label }}</a>
+        {% endif %}
       {% endfor %}
     {% else %}
       {% if language.default %}
         {% for navItem in language.navItems %}
-          <a href="{{ navItem.url }}">{{ navItem.label }}</a>
+          {% if loop.first %}
+            <a class="logo" href="{{ navItem.url }}">{{ navItem.label }}</a>
+          {% else %}
+            <a href="{{ navItem.url }}">{{ navItem.label }}</a>
+          {% endif %}
         {% endfor %}
       {% endif %}
     {% endif %}

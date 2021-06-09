@@ -43,7 +43,7 @@ body {
     min-height: 100vh;
     background-color: var(--color-background);
     color: var(--color-foreground);
-    font-family: var(--ff-serif);
+    font-family: var(--ff-sans);
     text-rendering: optimizeSpeed;
     line-height: 1.5;
     font-weight: 400;
@@ -67,7 +67,7 @@ h3,
 h4,
 h5 {
     margin: 2.1rem 0 1.05rem; // opinionated
-    font-family: var(--ff-sans);
+    font-family: var(--ff-serif);
     font-weight: 400;
     line-height: 1.15;
 }

@@ -4,14 +4,14 @@
     /* set light theme as (default) */
     @include themelight;
 
-    /* set dark-theme based on media preference. Handled by js/modules/theme.js */
+    /* set dark-theme based on media preference. Handled by _data/js/darkmode.js */
     @media (prefers-color-scheme: dark) {
         @include themedark;
     }
 
-    --ff-serif: "Quattrocento",
-    serif;
-    --ff-sans: sans-serif;
+    --ff-serif: serif;
+    --ff-sans: "Quattrocento Sans",
+    sans-serif;
     --ff-mono: monospace;
     /* typography from https://type-scale.com/ css file */
     --fs-h1: 3.052em;
