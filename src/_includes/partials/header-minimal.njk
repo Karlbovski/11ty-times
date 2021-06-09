@@ -1,0 +1,22 @@
+<header class="no-print">
+  {% for language in locales %}
+    {% if locale and locale === language.locale %}
+      {% for navItem in language.navItems %}
+        {% if loop.first %}
+          <div>
+            <a class="logo" href="{{ navItem.url }}">{{ navItem.label }}</a>
+          </div>
+        {% endif %}
+      {% endfor %}
+    {% else %}
+      {% if language.default %}
+        {% for navItem in language.navItems %}
+          {% if loop.first %}
+            <a class="logo" href="{{ navItem.url }}">{{ navItem.label }}</a>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  <button id="themetoggle" class="btn-log">12345-theme</button>
+</header>

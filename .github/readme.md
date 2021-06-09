@@ -4,7 +4,7 @@
 
 <small>dev-cycle `2021.2`</small>
 
-<small>Base starter : 11ty-Starter </small>
+<small>Base starter : 11ty-Starter [v0.0.6] </small>
 
 :construction: :construction: :construction: :construction:
 

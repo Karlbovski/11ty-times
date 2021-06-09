@@ -1,10 +1,12 @@
 ---
-title: The title
-metaTitle: "Same as the title, tho"
+metaTitle: "I once was the title"
 metaDescription: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, cum?
 category: article
-publish: true
 date: "2021-03-23"
+creator: "admin"
+publish: true
+featured: true
+locale: "en"
 ---
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ducimus dicta asperiores praesentium atque excepturi mollitia necessitatibus corporis et modi voluptatem, dolore voluptas perferendis expedita maiores illum rerum eligendi itaque maxime aperiam exercitationem. Sapiente maxime et rem voluptatibus error sequi ratione autem soluta tenetur aliquam officiis, tempora recusandae nulla molestias at magni eligendi! Pariatur perferendis, facere voluptatem molestiae facilis eaque est. Reiciendis dignissimos consequatur magnam. 

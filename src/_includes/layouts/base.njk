@@ -19,7 +19,9 @@
         {% include "partials/opengraph.njk" %}
     </head>
     <body>
-        {% include "partials/header.njk" %}
+        {% block header %}
+            {% include "partials/header.njk" %}
+        {% endblock %}
         <main>
             {% block content %}
                 {{ content | safe }}

@@ -1,4 +1,7 @@
 {% extends "layouts/base.njk" %}
+{% block header %}
+  {% include "partials/header-minimal.njk" %}
+{% endblock %}
 {% block content %}
   <section class="post">
     <h1>{{ metaTitle }}</h1>
@@ -6,9 +9,8 @@
       <small>
         <span>
           <datetime>{{ date | dateToFormat("YYYY MM DD") }}</datetime>
-        </span>|<span>
-          in {{ category }}
         </span>
+        &nbsp;| in {{ category }}
       </small>
     </p>
     {{ content | safe }}
