@@ -1,6 +1,6 @@
 ---
 metaTitle: "I 4 once was the title"
-metaDescription: "Lorem ipsum dolor sit amet consectetur. Quas, cum?"
+metaDescription: Temporibus omnis beatae mollitia. Harum placeat alias
 category: article
 date: "2021-05-23"
 creator: "admin"

@@ -1,15 +1,12 @@
 {% extends "layouts/base.njk" %}
 {% block content %}
-{# {% block headline %}
-    {{ headline | safe }}
-  {% endblock %} #}
-{# {% block contentNavigation %}
-    {{ contentNavigation | safe }}
-  {% endblock %} #}
   {% block contentBoard %}
     {{ contentBoard | safe }}
   {% endblock %}
   {% block contentAside %}
     {{ contentAside | safe }}
   {% endblock %}
+{% endblock %}
+{% block footer %}
+  {% include "partials/footer-minimal.njk" %}
 {% endblock %}

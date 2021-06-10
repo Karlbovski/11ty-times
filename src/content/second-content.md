@@ -1,6 +1,6 @@
 ---
 metaTitle: "I twice was the title"
-metaDescription: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, cum?
+metaDescription: Reiciendis nemo quibusdam fuga tempore nesciunt
 category: article
 date: "2020-03-23"
 creator: "admin"

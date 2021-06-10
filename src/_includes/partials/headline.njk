@@ -8,9 +8,9 @@
         {% if post.data.featured === true %}
           {% set counter =  counter + 1 %}
           {% if counter == 1 %}
-            <li class="headline__slide">
+            <li class="headline__slide current-slide">
             {% else %}
-              <li class="headline__slide hide">
+              <li class="headline__slide">
               {% endif %}
               <h1>{{ post.data.metaDescription }}</h1>
               {# <small>{{ post.data.date | dateToFormat("YYYY-MM-DD") }}</small> #}
@@ -26,7 +26,11 @@
     {# <button class="headline-button"></button> #}
     <div class="headline__nav">
       {% for i in range(0, counter) -%}
-        <button class="headline__indicator"></button>
+        {% if i === 0 %}
+          <button class="headline__indicator current-slide"></button>
+        {% else %}
+          <button class="headline__indicator"></button>
+        {% endif %}
       {%- endfor %}
     </div>
   </section>
