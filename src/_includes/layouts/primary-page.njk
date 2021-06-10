@@ -1,4 +1,7 @@
-{% extends "layouts/base-locales.njk" %}
+{% extends "layouts/base.njk" %}
+{% set metaTitle = "temp-title" %}
+{% set metaDescription = "temp-description" %}
+{% include "partials/metadata.njk" %}
 {% block content %}
   {% block headline %}
     {{ headline | safe }}

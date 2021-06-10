@@ -14,9 +14,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ '/css/main.css' | url }}"/>
         <meta name="description" content="{% if metaDescription %}{{ metaDescription | excerpt }}{% else %}{{ site.metaDescription }}{% endif %}">
-        <meta
-        name="keywords" content="{% if metaKeywords %}{{ metaKeywords }}{% else %}{{ site.metaKeywords }}{% endif %}"> {# {% include "partials/favicons.njk" %} #}
-        {% include "partials/opengraph.njk" %}
+    <meta name="keywords" content="{% if metaKeywords %}{{ metaKeywords }}{% else %}{{ site.metaKeywords }}{% endif %}">
+    {# {% include "partials/favicons.njk" %} #}
+        {# {% include "partials/opengraph.njk" %} #}
     </head>
     <body>
         {% block header %}

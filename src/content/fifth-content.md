@@ -5,7 +5,7 @@ category: article
 date: "2021-02-23"
 creator: "admin"
 publish: true
-featured: false
+featured: true
 locale: "en"
 ---
 

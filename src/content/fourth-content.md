@@ -1,6 +1,6 @@
 ---
 metaTitle: "I 4 once was the title"
-metaDescription: Lorem ipsum dolor sit amet consectetur. Quas, cum?
+metaDescription: "Lorem ipsum dolor sit amet consectetur. Quas, cum?"
 category: article
 date: "2021-05-23"
 creator: "admin"

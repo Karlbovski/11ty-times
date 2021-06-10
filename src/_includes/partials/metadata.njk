@@ -1,6 +1,5 @@
-{% extends "layouts/base.njk" %}
-{% set metaTitle = "title" %}
-{% set metaDescription = "description" %}
+{# {% set metaTitle = "title" %}
+{% set metaDescription = "description" %} #}
 {% for language in locales %}
   {% if locale and locale === language.locale %}
     {% set metaTitle = language.metaTitle %}

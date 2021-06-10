@@ -1,15 +1,32 @@
-<section class="headline">
-  <h1>{{metaDescription}}</h1>
-  <h3>{{metaTitle}}</h3>
-  <p>Excerpt Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam excepturi assumenda modi aliquid similique
-    reprehenderit laboriosam ipsa ut ab, nam esse veritatis voluptatibus necessitatibus iusto dicta quia itaque a
-    perspiciatis consectetur eligendi velit! Fugiat labore a ducimus aliquid facere magnam quas amet molestiae doloribus
-    ipsam deserunt velit, repudiandae excepturi, autem vel...</p>
-  <p>
-    <small>
-      started :
-      <time datetime="{{ page.date | dateToFormat('YYYY-MM-DD') }}">{{ page.date | dateToFormat('YYYY-MM-DD') }}</time>
-    </small>
-  </p>
-  <a href="/content/first-content/index.html">content</a>
-</section>
+<section
+  class="headline">
+  {# <button class="headline-button"></button> #}
+  <div class="headline__track-container">
+    <ul class="headline__track">
+      {% set counter = 0 %}
+      {% for post in collections.post %}
+        {% if post.data.featured === true %}
+          {% set counter =  counter + 1 %}
+          {% if counter == 1 %}
+            <li class="headline__slide">
+            {% else %}
+              <li class="headline__slide hide">
+              {% endif %}
+              <h1>{{ post.data.metaDescription }}</h1>
+              {# <small>{{ post.data.date | dateToFormat("YYYY-MM-DD") }}</small> #}
+              <h3>{{ post.data.metaTitle }}</h3>
+              <p>{{ post.templateContent | excerpt }}</p>
+              <a href="/">call to action</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+        {# {{ counter | log }} #}
+      </ul>
+    </div>
+    {# <button class="headline-button"></button> #}
+    <div class="headline__nav">
+      {% for i in range(0, counter) -%}
+        <button class="headline__indicator"></button>
+      {%- endfor %}
+    </div>
+  </section>
