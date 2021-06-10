@@ -14,7 +14,7 @@
               {% endif %}
               <h1>{{ post.data.metaDescription }}</h1>
               {# <small>{{ post.data.date | dateToFormat("YYYY-MM-DD") }}</small> #}
-              <h3>{{ post.data.metaTitle }}</h3>
+              <h2>{{ post.data.metaTitle }}</h2>
               <p>{{ post.templateContent | excerpt }}</p>
               <a href="/">call to action</a>
             </li>
@@ -27,9 +27,9 @@
     <div class="headline__nav">
       {% for i in range(0, counter) -%}
         {% if i === 0 %}
-          <button class="headline__indicator current-slide"></button>
+          <button class="headline__indicator current-slide" aria-label="Select Slide"></button>
         {% else %}
-          <button class="headline__indicator"></button>
+          <button class="headline__indicator" aria-label="Select Slide"></button>
         {% endif %}
       {%- endfor %}
     </div>
