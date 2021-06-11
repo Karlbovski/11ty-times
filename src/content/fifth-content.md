@@ -1,11 +1,11 @@
 ---
-metaTitle: "The eyes of the title...Lorem consectetur"
-metaDescription: Pariatur perferendis, facere voluptatem molestiae facilis eaque est.
+metaTitle: "From Joomla to WordPress to JAMStack!"
+metaDescription: The tell of a  journey.
 category: article
 date: "2021-02-23"
 creator: "admin"
 publish: true
-featured: false
+featured: true
 locale: "en"
 ---
 

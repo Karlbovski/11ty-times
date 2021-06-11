@@ -20,8 +20,29 @@ module.exports = [{
       {
         label: "Events",
         url: "#"
+      },
+      {
+        label: "Bio",
+        url: "#"
+      },
+      {
+        label: "Courses",
+        url: "#"
       }
-    ]
+    ],
+    footer: [{
+        label: "Privacy Policy",
+        url: "/"
+      },
+      {
+        label: "About",
+        url: "/about/index.html"
+      },
+      {
+        label: "Credits",
+        url: "/"
+      },
+    ],
   },
   {
     label: "français",

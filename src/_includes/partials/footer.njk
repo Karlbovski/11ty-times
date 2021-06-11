@@ -6,9 +6,11 @@
   </div>
   <div>
     <ul>
-      <li><a href="/">Privacy Policy</a></li>
-      <li><a href="/">Contact</a></li>
-      <li><a href="/">Credits</a></li>
+      {% for item in locales[0].footer %}
+        <li>
+          <a href="{{ item.url }}" rel="noopener">{{ item.label }}</a>
+        </li>
+      {% endfor %}
     </ul>
   </div>
 </footer>

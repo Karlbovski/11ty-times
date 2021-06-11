@@ -1,6 +1,6 @@
 ---
 metaTitle: "I 4 once was the title"
-metaDescription: Temporibus omnis beatae mollitia. Harum placeat alias
+metaDescription: Building a site that displays editorial content.
 category: article
 date: "2021-05-23"
 creator: "admin"

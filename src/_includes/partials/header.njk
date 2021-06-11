@@ -4,19 +4,19 @@
       {% for navItem in language.navItems %}
         {% if loop.first %}
           <div>
-            <a class="logo" href="{{ navItem.url }}">{{ navItem.label }}</a>
+            <a class="navItem--logo" href="{{ navItem.url }}">{{ navItem.label }}</a>
           </div>
         {% else %}
-          <a href="{{ navItem.url }}">{{ navItem.label }}</a>
+          <a href="{{ navItem.url }}" class="navItem">{{ navItem.label }}</a>
         {% endif %}
       {% endfor %}
     {% else %}
       {% if language.default %}
         {% for navItem in language.navItems %}
           {% if loop.first %}
-            <a class="logo" href="{{ navItem.url }}">{{ navItem.label }}</a>
+            <a class="navItem--logo" href="{{ navItem.url }}">{{ navItem.label }}</a>
           {% else %}
-            <a href="{{ navItem.url }}">{{ navItem.label }}</a>
+            <a href="{{ navItem.url }}" class="navItem">{{ navItem.label }}</a>
           {% endif %}
         {% endfor %}
       {% endif %}

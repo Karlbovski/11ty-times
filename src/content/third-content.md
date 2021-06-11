@@ -1,5 +1,5 @@
 ---
-metaTitle: "I trice was the title"
+metaTitle: "The eyes of the title...Lorem consecteture"
 metaDescription: Ipsum dolor sit amet consectetur, adipisicing elit. Quas?
 category: article
 date: "2021-03-23"
