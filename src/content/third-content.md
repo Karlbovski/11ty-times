@@ -1,11 +1,14 @@
 ---
-metaTitle: "The eyes of the title...Lorem consecteture"
-metaDescription: Ipsum dolor sit amet consectetur, adipisicing elit. Quas?
+title: "The eyes of the title...Lorem consecteture"
+summary: Ipsum dolor sit amet consectetur, adipisicing elit. Quas?
 category: article
 date: "2021-03-23"
 creator: "admin"
 publish: true
 featured: true
+image:
+imageSlide:
+imgAlt:
 locale: "en"
 ---
 

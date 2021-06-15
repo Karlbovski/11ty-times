@@ -1,11 +1,14 @@
 ---
-metaTitle: "I once was the title"
-metaDescription: Officia omnis blanditiis ad!
+title: "I once was the title"
+summary: Officia omnis blanditiis ad!
 category: article
 date: "2019-03-23"
 creator: "admin"
 publish: true
-featured: false
+featured: true
+image: https://picsum.photos/seed/slitsu/200/300
+imageSlide: https://picsum.photos/seed/slitsu/900/300
+imgAlt: Et aspernatur sint repellat
 locale: "en"
 ---
 

@@ -1,11 +1,14 @@
 ---
-metaTitle: "I twice was the title"
-metaDescription: Reiciendis nemo quibusdam fuga tempore nesciunt
+title: "I twice was the title"
+summary: Reiciendis nemo quibusdam fuga tempore nesciunt
 category: article
 date: "2020-03-23"
 creator: "admin"
 publish: true
 featured: false
+image:
+imageSlide:
+imgAlt:
 locale: "en"
 ---
 

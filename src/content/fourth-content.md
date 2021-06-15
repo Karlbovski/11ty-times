@@ -1,11 +1,14 @@
 ---
-metaTitle: "I 4 once was the title"
-metaDescription: Building a site that displays editorial content.
+title: "I 4 once was the title"
+summary: Building a site that displays editorial content.
 category: article
 date: "2021-05-23"
 creator: "admin"
 publish: true
 featured: true
+image: https://picsum.photos/seed/picsum/200/300
+imageSlide: https://picsum.photos/seed/picsum/900/300
+imgAlt: Et aspernatur sint repellat
 locale: "en"
 ---
 

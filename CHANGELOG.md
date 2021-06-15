@@ -7,13 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 #
 
 ## [Unreleased]
-_Track upcoming changes_
+_Track upcoming changes :_
 
+- refactoring meta data and locales to reflect new 11ty-Starter simplified and more robust rules.'
+- add card template rule :  IF image and featured THEN show image in card
+
+_future :_
+- tbd
 #
 
 ## branch > _main_
 
-## [0.0.1] <small> Jun 7, 2021</small>
+## [0.0.2] <small> Jun 15, 2021</small>
 
 ### Added 
 <small>`(new features)`</small>

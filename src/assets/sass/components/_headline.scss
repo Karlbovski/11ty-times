@@ -13,7 +13,6 @@
 }
 
 .headline__track-container {
-  // background-color: teal;
   position: relative;
   padding: .25em;
 }
@@ -25,7 +24,7 @@
 }
 
 .headline__slide {
-  padding: .5em;
+  padding: 1em;
   display: none;
   opacity: 0;
 
@@ -35,7 +34,6 @@
 
   h2 {
     font-size: var(--fs-h3);
-
   }
 }
 

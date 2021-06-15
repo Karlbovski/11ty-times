@@ -6,25 +6,29 @@
       {% if post.data.featured %}
         <div class="card featured">
           <h3>
-            <a href="{{ post.url | url }}">{{ post.data.metaTitle }}</a>
+            <a href="{{ post.url | url }}">{{ post.data.title }}</a>
           </h3>
           <p class="card__datetime">{{ post.data.date }} | in {{ post.data.category }}</p>
-          {% if post.data.metaDescription %}
-            <h4>{{ post.data.metaDescription }}</h4>
-          {% endif %}
-          <p>{{ post.templateContent | excerpt }}</p>
-        </div>
-      {% else %}
-        <div class="card">
-          <h3>
-            <a href="{{ post.url | url }}">{{ post.data.metaTitle }}</a>
-          </h3>
-          <p class="card__datetime">{{ post.data.date }} | in {{ post.data.category }}</p>
-          {% if post.data.metaDescription %}
-            <h4>{{ post.data.metaDescription }}</h4>
-          {% endif %}
-          <p>{{ post.templateContent | excerpt }}</p>
-        </div>
-      {% endif %}
-    {% endfor %}
-  </section>
+          {% if post.data.image %}
+            <picture>
+              <img src="{{ post.data.image }}" alt="{{ post.data.imgAlt }}" width="200" height="300"></picture>
+            {% endif %}
+            {% if post.data.summary %}
+              <h4>{{ post.data.summary }}</h4>
+            {% endif %}
+            <p>{{ post.templateContent | excerpt }}</p>
+          </div>
+        {% else %}
+          <div class="card">
+            <h3>
+              <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+            </h3>
+            <p class="card__datetime">{{ post.data.date }} | in {{ post.data.category }}</p>
+            {% if post.data.summary %}
+              <h4>{{ post.data.summary }}</h4>
+            {% endif %}
+            <p>{{ post.templateContent | excerpt }}</p>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </section>

@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="{% if locale %}{{ locale }}{% else %}en{% endif %}">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>
-            {% if metaTitle %}
-                {{ metaTitle }}
-            {% else %}
-                {{ site.metaTitle }}
-            {% endif %}
-        </title>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="{{ '/css/main.css' | url }}"/>
-        <meta name="description" content="{% if metaDescription %}{{ metaDescription | excerpt }}{% else %}{{ site.metaDescription }}{% endif %}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% include "partials/metainfo.html" %}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/css/main.css' | url }}" />
+    <meta name="description"
+        content="{% if metaDescription %}{{ metaDescription | excerpt }}{% else %}{{ site.metaDescription }}{% endif %}">
     <meta name="keywords" content="{% if metaKeywords %}{{ metaKeywords }}{% else %}{{ site.metaKeywords }}{% endif %}">
     {# {% include "partials/favicons.njk" %} #}
-        {# {% include "partials/opengraph.njk" %} #}
-    </head>
-    <body>
-        {% block header %}
-            {% include "partials/header.njk" %}
-        {% endblock %}
-        <main>
-            {% block content %}
-                {{ content | safe }}
-            {% endblock %}
-        </main>
-        {% block footer %}
-            {% include "partials/footer.njk" %}
-        {% endblock %}
-    </body>
-</html></head></html></body></html>
+</head>
+
+<body>
+    {% block header %}
+    {% include "partials/header.njk" %}
+    {% endblock %}
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    {% block footer %}
+    {% include "partials/footer.njk" %}
+    {% endblock %}
+</body>
+
+</html>
+</head>
+
+</html>
+</body>
+
+</html>
