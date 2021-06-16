@@ -1,9 +1,23 @@
 @use "../abstracts/mediaqueries"as *;
 
 .content-board {
-  grid-area: main;
-  width: 100%;
   margin-bottom: 3em;
+}
+
+.content-board--404 {
+  padding: 1em;
+
+  @include tablet {
+    padding: 6em 3em;
+  }
+
+  @include laptop {
+    padding: 6em 12em;
+  }
+
+  @include desktop {
+    padding: 3em 6em;
+  }
 }
 
 .grid-masonry {

@@ -1,14 +1,14 @@
 ---
 title: "I twice was the title"
-summary: Reiciendis nemo quibusdam fuga tempore nesciunt
+summary: Reiciendis fuga tempore nesciunt
 category: article
 date: "2020-03-23"
 creator: "admin"
 publish: true
-featured: false
-image:
-imageSlide:
-imgAlt:
+featured: true
+image: https://picsum.photos/seed/birillo/200/300
+imageSlide: https://picsum.photos/seed/birillo/900/300
+imgAlt: Et birillo sint repellat
 locale: "en"
 ---
 

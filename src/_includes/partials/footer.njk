@@ -6,9 +6,9 @@
   </div>
   <div>
     <ul>
-      {% for item in locales[0].footer %}
+      {% for item in footer['en'] %}
         <li>
-          <a href="{{ item.url }}" rel="noopener">{{ item.label }}</a>
+          <a class="url" href="{{ item.url }}" rel="noopener">{{ item.label }}</a>
         </li>
       {% endfor %}
     </ul>

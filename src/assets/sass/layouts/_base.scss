@@ -64,39 +64,18 @@ header {
 }
 
 main {
-  margin: 0 auto 0 auto;
+  // margin: 0 auto 0 auto;
   padding: 1em;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    "post"
-    "headline"
-    "cnav"
-    "main"
-    "board"
-    "aside";
-
   animation: fade-in .25s ease backwards;
 
-  @include laptop {
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-areas:
-      ". post ."
-      "headline headline headline"
-      "cnav cnav cnav"
-      "main main main"
-      "board board board"
-      "aside aside aside";
-  }
-
   @include desktop {
+    display: grid;
     grid-template-columns: 2fr 4fr 2fr;
-    grid-template-areas:
-      ". post ."
-      ". headline aside"
-      ". cnav aside"
-      ". main aside"
-      ". board aside";
+    grid-template-rows: 4fr repeat(auto-fit, 1fr);
+
+    section {
+      grid-column: 2 / 3;
+    }
   }
 }
 
@@ -104,23 +83,21 @@ a {
   color: var(--color-300);
 }
 
-.content-navigation {
-  grid-area: cnav;
-}
-
 .content-aside {
-  grid-area: aside;
 
   @include tablet {
     padding: 0 1em 0 8em;
     font-size: .9rem;
     text-align: right;
   }
+
+  @include desktop {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+  }
 }
 
 .post {
-  grid-area: post;
-
   @include desktop {
     padding: 0 4em;
   }

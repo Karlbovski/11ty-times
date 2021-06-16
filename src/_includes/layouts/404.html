@@ -1,0 +1,16 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+<!-- {% block contentNavigation %}
+{% include "partials/content-nav.njk"%}
+{{ contentNavigation | safe }}
+{% endblock %} -->
+<section class="content-board content-board--404">
+  {{ content | safe }}
+</section>
+<!-- {% block contentAside %}
+{% include "partials/content-aside.njk"%}
+{% endblock %} -->
+{% endblock %}
+{% block footer %}
+{% include "partials/footer-minimal.njk" %}
+{% endblock %}

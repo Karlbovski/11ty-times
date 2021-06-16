@@ -1,14 +1,14 @@
 ---
 title: "From Joomla to WordPress to JAMStack!"
-summary: The tell of a  journey.
+summary: The tell of a journey.
 category: article
 date: "2021-02-23"
 creator: "admin"
 publish: true
 featured: true
-image:
-imageSlide:
-imgAlt:
+image: https://picsum.photos/seed/roll/200/300
+imageSlide: https://picsum.photos/seed/roll/900/300
+imgAlt: Et aspernatur sint repellat
 locale: "en"
 ---
 
