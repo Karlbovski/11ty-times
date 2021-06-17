@@ -58,7 +58,24 @@
 }
 
 .current-slide {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  a {
+    text-decoration: none;
+    align-self: flex-end;
+    font-size: var(--fs-small);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: .3em .6em;
+    transition: all .25s ease;
+
+    &:hover {
+      color: var(--col-300);
+      border: 1px solid rgba(0, 0, 0, 0.6);
+    }
+  }
+
   animation: fade-in .6s ease-in-out forwards;
 }
 

@@ -1,5 +1,5 @@
 <section class="headline">
-  {# <button class="headline-button"></button> #}
+  <!-- <button class="headline-button"></button> -->
   <div class="headline__track-container">
     <ul class="headline__track">
       {% set counter = 0 %}
@@ -20,14 +20,14 @@
         {% endif %}
         <h2>{{ post.data.title }}</h2>
         <p>{{ post.templateContent | excerpt }}</p>
-        <a href="{{post.url | url}}">call to action</a>
+        <a href="{{post.url | url}}" rel=noopener>read more</a>
       </li>
       {% endif %}
       {% endfor %}
       <!-- {{ counter | log }} -->
     </ul>
   </div>
-  {# <button class="headline-button"></button> #}
+  <!-- <button class="headline-button"></button> -->
   <div class="headline__nav">
     {% for i in range(0, counter) -%}
     {% if i === 0 %}

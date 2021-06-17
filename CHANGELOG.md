@@ -11,6 +11,7 @@ _Track upcoming changes :_
 
 - refactoring meta data and locales to reflect new 11ty-Starter simplified and more robust rules.'
 - add card template rule :  IF image and featured THEN show image in card
+- find a solution for the headline content shift. Google `css carousel avoid content shifting`
 
 _future :_
 - tbd

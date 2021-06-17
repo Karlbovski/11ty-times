@@ -71,7 +71,7 @@ main {
   @include desktop {
     display: grid;
     grid-template-columns: 2fr 4fr 2fr;
-    grid-template-rows: 4fr repeat(auto-fit, 1fr);
+    // grid-template-rows: 4fr repeat(auto-fit, 1fr);
 
     section {
       grid-column: 2 / 3;

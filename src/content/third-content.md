@@ -6,8 +6,8 @@ date: "2021-03-23"
 creator: "admin"
 publish: true
 featured: true
-image: https://picsum.photos/seed/serp/200/300
-imageSlide: https://picsum.photos/seed/serp/900/300
+# image: https://picsum.photos/seed/serp/200/300
+# imageSlide: https://picsum.photos/seed/serp/900/300
 imgAlt: Et serp sint repellat
 locale: "en"
 ---
