@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 _Track upcoming changes :_
 
-- refactoring meta data and locales to reflect new 11ty-Starter simplified and more robust rules.'
+- refactoring meta data and locales to reflect new 11ty-Starter simplified and more robust rules.
 - add card template rule :  IF image and featured THEN show image in card
 - find a solution for the headline content shift. Google `css carousel avoid content shifting`
 

@@ -14,9 +14,10 @@
         <h1>{{ post.data.summary }}</h1>
         {# <small>{{ post.data.date | dateToFormat("YYYY-MM-DD") }}</small> #}
         {% if post.data.imageSlide %}
-        <picture>
+        <figure>
           <img class="headline__image" src="{{ post.data.imageSlide }}" alt="{{ post.data.imgAlt }}" width="900"
-            height="300"></picture>
+            height="300">
+        </figure>
         {% endif %}
         <h2>{{ post.data.title }}</h2>
         <p>{{ post.templateContent | excerpt }}</p>
