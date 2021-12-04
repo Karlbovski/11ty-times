@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const navItems = Array.from(nav.children);
   var timer = new Timer(function () {
     changeSlide();
-  }, 6000);
+  }, 9000);
 
   timer.start();
 
