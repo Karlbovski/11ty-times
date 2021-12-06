@@ -17,7 +17,7 @@ body {
 
 header {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 3em;
@@ -81,6 +81,12 @@ main {
 
 a {
   color: var(--color-300);
+}
+
+section {
+  h2 {
+    font-size: var(--fs-h3);
+  }
 }
 
 .content-aside {

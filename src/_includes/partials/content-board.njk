@@ -1,8 +1,7 @@
 <section class="content-board">
-  <h2>Latest</h2>
-  <small>[partials/content-board.njk]</small>
-  <div class="grid-masonry">
-    {% for post in collections.post | reverse %}
+  {# <h2>Latest</h2> #}
+  {# <code>[partials/content-board.njk]</code> #}
+    <div class="grid-masonry"> {% for post in collections.post | reverse %}
       {% if post.data.featured %}
         <div class="card featured">
           <h3>
@@ -16,7 +15,9 @@
             {% if post.data.summary %}
               <h4>{{ post.data.summary }}</h4>
             {% endif %}
-            <p>{{ post.templateContent | excerpt }}</p>
+            <p class="card__text">
+              <a href="{{ post.url | url }}">{{ post.templateContent | excerpt }}</a>
+            </p>
           </div>
         {% else %}
           <div class="card">
@@ -27,7 +28,9 @@
             {% if post.data.summary %}
               <h4>{{ post.data.summary }}</h4>
             {% endif %}
-            <p>{{ post.templateContent | excerpt }}</p>
+            <p class="card__text">
+              <a href="{{ post.url | url }}">{{ post.templateContent | excerpt }}</a>
+            </p>
           </div>
         {% endif %}
       {% endfor %}

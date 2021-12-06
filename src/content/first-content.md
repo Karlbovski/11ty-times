@@ -5,7 +5,7 @@ category: article
 date: "2019-03-23"
 creator: "admin"
 publish: true
-featured: true
+featured: false
 image: https://picsum.photos/seed/slitsu/200/300
 imageSlide: https://picsum.photos/seed/slitsu/900/300
 imgAlt: Et aspernatur sint repellat

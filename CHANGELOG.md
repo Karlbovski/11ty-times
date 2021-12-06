@@ -15,8 +15,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 #
 
-## [0.0.2]
-<small> Jun 15, 2021</small>
+## [0.0.7]
+<small> Dec 5, 2021</small>
 
 ### Added 
 <small>`(new features)`</small>
