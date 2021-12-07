@@ -7,10 +7,10 @@
           <h3>
             <a href="{{ post.url | url }}">{{ post.data.title }}</a>
           </h3>
-          <p class="card__datetime">{{ post.data.date }} | in {{ post.data.category }}</p>
+          <p class="card__datetime">{{ post.data.date }} | in {{ post.data.category }}s</p>
           {% if post.data.image %}
             <figure>
-              <img src="{{ post.data.image }}" alt="{{ post.data.imgAlt }}" width="200" height="300"></figure>
+              <img src="{{ post.data.image }}" alt="{{ post.data.imgAlt }}" width="320" height="200"></figure>
             {% endif %}
             {% if post.data.summary %}
               <h4>{{ post.data.summary }}</h4>
@@ -24,7 +24,7 @@
             <h3>
               <a href="{{ post.url | url }}">{{ post.data.title }}</a>
             </h3>
-            <p class="card__datetime">{{ post.data.date }} | in {{ post.data.category }}</p>
+            <p class="card__datetime">{{ post.data.date }} | in {{ post.data.category }}s</p>
             {% if post.data.summary %}
               <h4>{{ post.data.summary }}</h4>
             {% endif %}

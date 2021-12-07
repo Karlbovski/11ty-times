@@ -6,7 +6,7 @@ date: "2021-05-23"
 creator: "admin"
 publish: true
 featured: true
-image: https://picsum.photos/seed/picsum/200/300
+image: https://picsum.photos/seed/pic_sum/320/200
 imageSlide: https://picsum.photos/seed/picsum/900/300
 imgAlt: Et aspernatur sint repellat
 locale: "en"

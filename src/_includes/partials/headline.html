@@ -12,7 +12,6 @@
       <li class="headline__slide">
         {% endif %}
         <h1>{{ post.data.summary }}</h1>
-        {# <small>{{ post.data.date | dateToFormat("YYYY-MM-DD") }}</small> #}
         {% if post.data.imageSlide %}
         <figure>
           <img class="headline__image" src="{{ post.data.imageSlide }}" alt="{{ post.data.imgAlt }}" width="900"
@@ -20,6 +19,7 @@
         </figure>
         {% endif %}
         <h2>{{ post.data.title }}</h2>
+        <p class="card__datetime">{{ post.data.date | dateToFormat("YYYY-MM-DD") }} | {{ post.data.category }}</p>
         <p>{{ post.templateContent | excerpt }}</p>
         <a href="{{post.url | url}}" rel=noopener>read more</a>
       </li>

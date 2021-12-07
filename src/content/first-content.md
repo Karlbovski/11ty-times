@@ -5,8 +5,8 @@ category: article
 date: "2019-03-23"
 creator: "admin"
 publish: true
-featured: false
-image: https://picsum.photos/seed/slitsu/200/300
+featured: true
+image: https://picsum.photos/seed/slits/320/200
 imageSlide: https://picsum.photos/seed/slitsu/900/300
 imgAlt: Et aspernatur sint repellat
 locale: "en"

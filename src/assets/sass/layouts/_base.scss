@@ -26,6 +26,8 @@ header {
   margin-bottom: 1em;
   text-align: center;
 
+  transition: all 1s;
+
   @include laptop {
     padding: 3em;
   }
@@ -45,6 +47,8 @@ header {
   flex: 2 0 100%;
   font-size: var(--fs-h3);
   font-family: var(--ff-serif);
+
+  animation: fade-in .2s ease backwards;
 
   @include laptop {
     flex: 1 0 0; //or 1 0 1 
@@ -66,7 +70,7 @@ header {
 main {
   // margin: 0 auto 0 auto;
   padding: 1em;
-  animation: fade-in .25s ease backwards;
+  animation: fade-in .36s ease backwards;
 
   @include desktop {
     display: grid;
